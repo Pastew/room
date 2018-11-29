@@ -6,6 +6,10 @@ public class SelectionRadial: MonoBehaviour
 {
     private Image image;
 
+    private void Start()
+    {
+    }
+
     private void Awake()
     {
         image = GetComponent<Image>();
