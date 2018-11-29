@@ -40,6 +40,7 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     {
         userGazingAtMe = true;
         timeLeftToSelect = timeNeededToSelect;
+        selectionRadial.ShowBackground(true);
         PointerEnter();
     }
 
@@ -47,6 +48,7 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     {
         userGazingAtMe = false;
         timeLeftToSelect = timeNeededToSelect;
+        selectionRadial.ShowBackground(false);
         selectionRadial.OnExitWithNoSuccess();
         PointerExit();
     }
