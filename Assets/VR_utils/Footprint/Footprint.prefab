@@ -110,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e8ae72bbd947de4f8b9fbeaeb5f7d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeNeededToSelect: 2
+  timeNeededToSelect: 1
   walkSpeed: 3

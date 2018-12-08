@@ -5043,29 +5043,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 143303345684424550, guid: 81af74270cb591847bdf1340b0d0b506,
+    - target: {fileID: 114841765440046012, guid: 81af74270cb591847bdf1340b0d0b506,
         type: 2}
-      propertyPath: m_Height
-      value: 1.8
+      propertyPath: m_Color.r
+      value: 0.21046902
       objectReference: {fileID: 0}
-    - target: {fileID: 143303345684424550, guid: 81af74270cb591847bdf1340b0d0b506,
+    - target: {fileID: 114841765440046012, guid: 81af74270cb591847bdf1340b0d0b506,
         type: 2}
-      propertyPath: m_Center.y
-      value: -0.9
+      propertyPath: m_Color.g
+      value: 0.9339623
       objectReference: {fileID: 0}
-    - target: {fileID: 1961020701204274, guid: 81af74270cb591847bdf1340b0d0b506, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 114980800963627244, guid: 81af74270cb591847bdf1340b0d0b506,
+    - target: {fileID: 114841765440046012, guid: 81af74270cb591847bdf1340b0d0b506,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Color.b
+      value: 0.004405493
       objectReference: {fileID: 0}
-    - target: {fileID: 114672201587348860, guid: 81af74270cb591847bdf1340b0d0b506,
+    - target: {fileID: 114841765440046012, guid: 81af74270cb591847bdf1340b0d0b506,
         type: 2}
-      propertyPath: maxReticleDistance
-      value: 5
+      propertyPath: m_FillAmount
+      value: 0.408
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81af74270cb591847bdf1340b0d0b506, type: 2}

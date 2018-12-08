@@ -50,5 +50,8 @@ public class SmoothTransition : MonoBehaviour {
 
         // Set our position as a fraction of the distance between the markers.
         transform.position = Vector3.Lerp(startPos, endPos, fracJourney);
+        if (Vector3.Distance(transform.position, endPos) < 0.1f)
+            Destroy(this);
+            
     }
 }

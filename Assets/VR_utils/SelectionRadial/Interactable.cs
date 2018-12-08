@@ -17,8 +17,6 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     private void Awake()
     {
         selectionRadial = FindObjectOfType<SelectionRadial>();
-        if (null == selectionRadial)
-            print("DUIPA");
     }
 
     protected virtual void Update()
