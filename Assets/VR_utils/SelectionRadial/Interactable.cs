@@ -17,6 +17,8 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     private void Awake()
     {
         selectionRadial = FindObjectOfType<SelectionRadial>();
+        if (null == selectionRadial)
+            print("DUIPA");
     }
 
     protected virtual void Update()
@@ -38,6 +40,8 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (selectionRadial == null)
+            selectionRadial = FindObjectOfType<SelectionRadial>();
         userGazingAtMe = true;
         timeLeftToSelect = timeNeededToSelect;
         selectionRadial.ShowBackground(true);

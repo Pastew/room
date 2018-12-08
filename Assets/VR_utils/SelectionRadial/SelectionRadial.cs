@@ -23,6 +23,7 @@ public class SelectionRadial : MonoBehaviour
 
         gvrReticlePointer = FindObjectOfType<GvrReticlePointer>();
         ShowBackground(false);
+        print("selectionradial");
     }
 
     // From 0.0 to 1.0
