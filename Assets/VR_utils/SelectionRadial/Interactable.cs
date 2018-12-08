@@ -60,7 +60,7 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     // Implement this if you want to do something additional on pointer enter
     protected virtual void PointerExit() { }
 
-    protected virtual void InvokeAction() { }
+    protected abstract void InvokeAction();
 
     public void OnPointerClick(PointerEventData eventData)
     {

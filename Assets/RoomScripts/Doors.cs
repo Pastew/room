@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Doors : Interactable {
 
-    int closed = 1;
+    // 1 for yes, -1 for no
+    public int closed = 1;
+    public float rotationAngle = 90;
 
     protected override void InvokeAction()
     {
-        transform.Rotate(Vector3.up, 90 * closed);
+        transform.Rotate(Vector3.up, rotationAngle * closed);
         closed *= -1;
     }
 }
