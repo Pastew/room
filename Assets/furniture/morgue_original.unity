@@ -1672,7 +1672,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4487118023211834, guid: cccd337a028d4894d8c70e4a6e12c00b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
+      value: -0.00000020159644
       objectReference: {fileID: 0}
     - target: {fileID: 4487118023211834, guid: cccd337a028d4894d8c70e4a6e12c00b, type: 2}
       propertyPath: m_RootOrder
@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   closed: 1
-  rotationAngle: 90
+  eulerRotation: {x: 0, y: -100, z: 0}
 --- !u!1001 &754218778
 Prefab:
   m_ObjectHideFlags: 0
@@ -5229,7 +5229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   closed: 1
-  rotationAngle: 90
+  eulerRotation: {x: 0, y: 275, z: 0}
 --- !u!1001 &2142309386
 Prefab:
   m_ObjectHideFlags: 0

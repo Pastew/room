@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33933922762712620}
   - component: {fileID: 23183985410503644}
   - component: {fileID: 65342425628365992}
-  - component: {fileID: 114158424973400202}
+  - component: {fileID: 114250712295793686}
   m_Layer: 0
   m_Name: corpse_drawer_door
   m_TagString: Untagged
@@ -105,8 +105,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1563457866722372}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000016292068}
-  m_LocalPosition: {x: -0.004799843, y: 1.1340001, z: 4.0205}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: -0.004799843, y: 0.3, z: 4.0205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4798298001441288}
@@ -374,7 +374,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 93.133804, y: 72.77468, z: 5.4766064}
   m_Center: {x: 45.159424, y: -23.58276, z: 1.2963794}
---- !u!114 &114158424973400202
+--- !u!114 &114250712295793686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   closed: 1
-  rotationAngle: -110
+  eulerRotation: {x: 0, y: 110, z: 0}
 --- !u!114 &114279220323781476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,3 +401,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   slideVector: {x: 0, y: 0, z: 1.7}
+  slideSpeed: 0

@@ -3,14 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Doors : Interactable {
+    public bool closed = true;
+    public Vector3 eulerRotation = Vector3.zero;
 
-    // 1 for yes, -1 for no
-    public int closed = 1;
-    public float rotationAngle = 90;
+    private float rotationSpeed = 0.5f;
+    private Quaternion endRotation;
+    private Quaternion startRotation;
+
+    private void Awake()
+    {
+        startRotation = transform.rotation;
+
+        // Calculate end Rotation
+        Vector3 startEulerAngles = transform.rotation.eulerAngles;
+        endRotation = Quaternion.Euler(eulerRotation);
+    }
 
     protected override void InvokeAction()
     {
-        transform.Rotate(Vector3.up, rotationAngle * closed);
-        closed *= -1;
+        SmoothRotation smoothRotation = gameObject.AddComponent<SmoothRotation>();
+        if(closed)
+            smoothRotation.Setup(startRotation, endRotation, rotationSpeed);
+        else
+            smoothRotation.Setup(endRotation, startRotation, rotationSpeed);
+
+        closed = !closed;
     }
 }
