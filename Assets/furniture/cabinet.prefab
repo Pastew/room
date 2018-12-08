@@ -312,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   slideVector: {x: -0.6, y: 0, z: 0}
+  slideSpeed: 1
 --- !u!114 &114944598724537954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,3 +326,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNeededToSelect: 2
   slideVector: {x: 0.6, y: 0, z: 0}
+  slideSpeed: 1
