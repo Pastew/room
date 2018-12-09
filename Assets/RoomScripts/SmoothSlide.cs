@@ -11,7 +11,6 @@ public class SmoothSlide : Interactable
 
     protected override void InvokeAction()
     {
-        Vector3 slideVector = new Vector3(0, 0, 1.7f);
         SmoothTransition smoothTransition = gameObject.AddComponent<SmoothTransition>();
 
         Vector3 startPos = transform.localPosition;
