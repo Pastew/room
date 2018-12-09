@@ -16,7 +16,7 @@ public class LockDiskRotator : Interactable {
 
     protected override void InvokeAction()
     {
-        disk.GetComponent<LockDisk>().ChangeValue(dir);
+        disk.GetComponent<LockDisk>().Rotate(dir); 
     }
 
 }
