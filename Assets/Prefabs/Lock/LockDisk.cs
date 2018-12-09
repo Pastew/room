@@ -3,7 +3,7 @@
 public class LockDisk : MonoBehaviour {
 
     public int value = 0;
-
+    public int diskIndex = 0;
     public float rotationSpeed = 500f;
 
     SmoothRotation.RotationFinishedDelegate methodToCallOnRotationFinished;
@@ -33,7 +33,7 @@ public class LockDisk : MonoBehaviour {
 
     private void OnRotationFinished()
     {
-        //print("rotation finished. code number = ");
+        transform.parent.parent.GetComponent<Lock>().UpdateCode(diskIndex, value);
     }
 
 }

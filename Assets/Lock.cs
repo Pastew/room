@@ -1,16 +1,34 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Lock : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public int[] correctCode;
+    public int[] currentCode;
+
+    public void UpdateCode(int index, int value)
+    {
+        currentCode[index] = value;
+        
+        for (int i = 0; i < correctCode.Length; ++i)
+        {
+            if (correctCode[i] != currentCode[i])
+                return;
+        }
+
+        CorrectCodeEntered();
+    }
+
+    private void CorrectCodeEntered()
+    {
+        StartOpenLockAnimation();
+        Destroy(gameObject, 1f);
+    }
+
+    private void StartOpenLockAnimation()
+    {
+        print("OpenLock animation!");
+    }
 }
