@@ -10,8 +10,9 @@ public class Grabbable : Interactable
     private GameObject putDownPlace;
     private GameObject hand;
 
-    private void Awake()
+    protected new void Awake()
     {
+        base.Awake();
         originalParent = transform.parent;
         originalLocalPosition = transform.localPosition;
         hand = FindObjectOfType<Hand>().gameObject;

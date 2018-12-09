@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 412390}
   - component: {fileID: 3322826}
   - component: {fileID: 2368562}
+  - component: {fileID: 65990458945617754}
+  - component: {fileID: 114143115790912066}
   m_Layer: 0
   m_Name: scissors
   m_TagString: Untagged
@@ -23,9 +25,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132126}
-  m_LocalRotation: {x: 0, y: 0.9995171, z: 0, w: 0.031074889}
-  m_LocalPosition: {x: -1.8731, y: 0.9452, z: 1.8675}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalRotation: {x: -0, y: 0.8973618, z: -0, w: -0.44129568}
+  m_LocalPosition: {x: 18.9, y: 94.520004, z: -7.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,3 +85,28 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132126}
   m_IsPrefabAsset: 1
+--- !u!65 &65990458945617754
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.125598, y: 4.0347853, z: 4.9838643}
+  m_Center: {x: -0.00003054738, y: 1.83026, z: 0.000015087431}
+--- !u!114 &114143115790912066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9f477283e0b2748b0a38f1844c58a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeNeededToSelect: 2
+  distanceRequiredToInteract: 2

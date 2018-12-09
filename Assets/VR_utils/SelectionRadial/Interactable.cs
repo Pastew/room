@@ -5,18 +5,20 @@ using UnityEngine.EventSystems;
 
 public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    // seconds
-    public float timeNeededToSelect = 2f;
+    protected float timeNeededToSelect = 1f; // seconds
+    protected float distanceRequiredToInteract = 2f; // meters
 
     protected bool userGazingAtMe = false;
 
-    // seconds
-    private float timeLeftToSelect;
-    private SelectionRadial selectionRadial;
+    private float timeLeftToSelect; // seconds
 
-    private void Start()
+    private SelectionRadial selectionRadial;
+    private GameObject player;
+
+    protected void Awake()
     {
         selectionRadial = FindObjectOfType<SelectionRadial>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     protected virtual void Update()
@@ -38,30 +40,33 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        PointerEnter();
+        float distanceBetweenPlayerAndObject = Vector3.Distance(transform.position, player.transform.position);
+        if (distanceBetweenPlayerAndObject <= distanceRequiredToInteract)
+            PointerEnter();
+        else
+            print(transform.name + " is too far away: " + distanceBetweenPlayerAndObject);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if (selectionRadial == null)
+            selectionRadial = FindObjectOfType<SelectionRadial>(); // TODO: Find out why it is null sometimes
+
         PointerExit();
     }
 
 
     // Implement this if you want to do something additional on pointer enter
-    protected virtual void PointerEnter() {
-        if (selectionRadial == null)
-            selectionRadial = FindObjectOfType<SelectionRadial>();
-
+    protected virtual void PointerEnter()
+    {
         userGazingAtMe = true;
         timeLeftToSelect = timeNeededToSelect;
         selectionRadial.ShowBackground(true);
     }
 
     // Implement this if you want to do something additional on pointer enter
-    protected virtual void PointerExit() {
-        if (selectionRadial == null)
-            selectionRadial = FindObjectOfType<SelectionRadial>();
-
+    protected virtual void PointerExit()
+    {
         userGazingAtMe = false;
         timeLeftToSelect = timeNeededToSelect;
         selectionRadial.ShowBackground(false);

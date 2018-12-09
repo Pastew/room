@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1378887300388362}
+  m_RootGameObject: {fileID: 1983625887882530}
   m_IsPrefabAsset: 1
---- !u!1 &1378887300388362
+--- !u!1 &1983625887882530
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4091796983803500}
-  - component: {fileID: 33679004476152964}
-  - component: {fileID: 23093097031160924}
-  - component: {fileID: 64546157122929132}
-  - component: {fileID: 114353269817232698}
+  - component: {fileID: 4380614995480236}
+  - component: {fileID: 33079120143674456}
+  - component: {fileID: 23134620552647308}
+  - component: {fileID: 65725003405741556}
+  - component: {fileID: 114910909309930868}
   m_Layer: 0
-  m_Name: Footprint
+  m_Name: scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4091796983803500
+--- !u!4 &4380614995480236
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378887300388362}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0.05, z: 2.94}
-  m_LocalScale: {x: 0.047411893, y: 0.047411893, z: 0.047411893}
+  m_GameObject: {fileID: 1983625887882530}
+  m_LocalRotation: {x: -0, y: 0.8973618, z: -0, w: -0.44129568}
+  m_LocalPosition: {x: 18.9, y: 94.520004, z: -7.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23093097031160924
+--- !u!23 &23134620552647308
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378887300388362}
+  m_GameObject: {fileID: 1983625887882530}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 48a053feb39b81b4db7c186ac660a5f5, type: 2}
+  - {fileID: 2100000, guid: e71d2e1933914ad47a5eacf6e2806cf9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,38 +78,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33679004476152964
+--- !u!33 &33079120143674456
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378887300388362}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64546157122929132
-MeshCollider:
+  m_GameObject: {fileID: 1983625887882530}
+  m_Mesh: {fileID: 4300000, guid: cbfbe6727ccb8e8468b2c0ea0164180e, type: 3}
+--- !u!65 &65725003405741556
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378887300388362}
+  m_GameObject: {fileID: 1983625887882530}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114353269817232698
+  serializedVersion: 2
+  m_Size: {x: 10.125598, y: 4.0347853, z: 4.9838643}
+  m_Center: {x: -0.00003054738, y: 1.83026, z: 0.000015087431}
+--- !u!114 &114910909309930868
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378887300388362}
+  m_GameObject: {fileID: 1983625887882530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8ae72bbd947de4f8b9fbeaeb5f7d06, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9f477283e0b2748b0a38f1844c58a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeNeededToSelect: 0.1
-  distanceRequiredToInteract: 6
-  walkSpeed: 3

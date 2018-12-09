@@ -17,10 +17,10 @@ public class SmoothRotation : MonoBehaviour {
     }
 
     void Update () {
-        transform.rotation = Quaternion.Slerp(startRotation, endRotation, timeCount);
+        transform.localRotation = Quaternion.Slerp(startRotation, endRotation, timeCount  *rotationSpeed);
         timeCount = timeCount + Time.deltaTime;
 
-        if (Quaternion.Angle(transform.rotation, endRotation) < 1)
+        if (Quaternion.Angle(transform.localRotation, endRotation) < 1)
             Destroy(this);
     }
 }

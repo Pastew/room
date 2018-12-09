@@ -6,6 +6,13 @@ public class Footprint : Interactable
 {
     public float walkSpeed = 3;
 
+    protected new void Awake()
+    {
+        base.Awake();
+        timeNeededToSelect = 0.5f; // seconds
+        distanceRequiredToInteract = 10f; // meters
+    }
+
     protected override void InvokeAction()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
