@@ -14,7 +14,7 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     private float timeLeftToSelect;
     private SelectionRadial selectionRadial;
 
-    private void Awake()
+    private void Start()
     {
         selectionRadial = FindObjectOfType<SelectionRadial>();
     }
@@ -38,29 +38,35 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (selectionRadial == null)
-            selectionRadial = FindObjectOfType<SelectionRadial>();
-        userGazingAtMe = true;
-        timeLeftToSelect = timeNeededToSelect;
-        selectionRadial.ShowBackground(true);
         PointerEnter();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        userGazingAtMe = false;
-        timeLeftToSelect = timeNeededToSelect;
-        selectionRadial.ShowBackground(false);
-        selectionRadial.OnExitWithNoSuccess();
         PointerExit();
     }
 
 
     // Implement this if you want to do something additional on pointer enter
-    protected virtual void PointerEnter() { }
+    protected virtual void PointerEnter() {
+        if (selectionRadial == null)
+            selectionRadial = FindObjectOfType<SelectionRadial>();
+
+        userGazingAtMe = true;
+        timeLeftToSelect = timeNeededToSelect;
+        selectionRadial.ShowBackground(true);
+    }
 
     // Implement this if you want to do something additional on pointer enter
-    protected virtual void PointerExit() { }
+    protected virtual void PointerExit() {
+        if (selectionRadial == null)
+            selectionRadial = FindObjectOfType<SelectionRadial>();
+
+        userGazingAtMe = false;
+        timeLeftToSelect = timeNeededToSelect;
+        selectionRadial.ShowBackground(false);
+        selectionRadial.OnExitWithNoSuccess();
+    }
 
     protected abstract void InvokeAction();
 

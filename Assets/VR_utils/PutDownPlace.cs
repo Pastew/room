@@ -7,7 +7,7 @@ public class PutDownPlace : Interactable
     protected override void InvokeAction()
     {
         Hand hand = FindObjectOfType<Hand>();
-        GameObject heldObject = hand.transform.GetChild(0).gameObject;
+        GameObject heldObject = hand.GetHeldGameObject();
         heldObject.GetComponent<Grabbable>().PutBackOnPlace();
         Destroy(gameObject);
     }

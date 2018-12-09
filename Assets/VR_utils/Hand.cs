@@ -1,16 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hand : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class Hand : MonoBehaviour
+{
+    internal GameObject GetHeldGameObject()
+    {
+        if (transform.childCount == 0)
+            return null;
+        else
+            return transform.GetChild(0).gameObject;
+    }
 }
