@@ -11,7 +11,7 @@ public class LockDiskRotator : Interactable {
     {
         base.Awake();
         canRunMultipleTimesInARow = true;
-        timeNeededToSelect = 0.5f;
+        timeNeededToSelect = 0.8f;
     }
 
     protected override void InvokeAction()

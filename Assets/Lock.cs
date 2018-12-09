@@ -24,11 +24,11 @@ public class Lock : MonoBehaviour {
     private void CorrectCodeEntered()
     {
         StartOpenLockAnimation();
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 2.5f);
     }
 
     private void StartOpenLockAnimation()
     {
-        print("OpenLock animation!");
+        GetComponent<Animator>().enabled = true;
     }
 }
