@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmoothRotation : MonoBehaviour {
+public class SmoothRotation : MonoBehaviour
+{
     private float rotationSpeed;
     private Quaternion endRotation;
     private Quaternion startRotation;
@@ -16,8 +17,9 @@ public class SmoothRotation : MonoBehaviour {
         this.startRotation = startRotation;
     }
 
-    void Update () {
-        transform.localRotation = Quaternion.Slerp(startRotation, endRotation, timeCount  *rotationSpeed);
+    void Update()
+    {
+        transform.localRotation = Quaternion.Slerp(startRotation, endRotation, timeCount * rotationSpeed);
         timeCount = timeCount + Time.deltaTime;
 
         if (Quaternion.Angle(transform.localRotation, endRotation) < 1)

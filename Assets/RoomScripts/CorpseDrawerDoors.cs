@@ -19,8 +19,6 @@ public class CorpseDrawerDoors : Interactable {
         base.Awake();
         startRotation = transform.localRotation;
 
-        // Calculate end Rotation
-        Vector3 startEulerAngles = transform.rotation.eulerAngles;
         endRotation = Quaternion.Euler(eulerRotation);
         timeNeededToSelect = 2f;
     }

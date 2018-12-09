@@ -11,6 +11,7 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
     protected bool userGazingAtMe = false;
 
     private float timeLeftToSelect; // seconds
+    protected bool canRunMultipleTimesInARow = false;
 
     private SelectionRadial selectionRadial;
     private GameObject player;
@@ -34,6 +35,10 @@ public abstract class Interactable : MonoBehaviour, IPointerEnterHandler, IPoint
             {
                 InvokeAction();
                 selectionRadial.OnInvokeAction();
+                if (canRunMultipleTimesInARow)
+                {
+                    timeLeftToSelect = timeNeededToSelect;
+                }
             }
         }
     }
