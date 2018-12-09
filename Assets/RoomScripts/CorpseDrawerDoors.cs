@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doors : Interactable {
+public class CorpseDrawerDoors : Interactable {
     public bool closed = true;
     public Vector3 eulerRotation = Vector3.zero;
 
