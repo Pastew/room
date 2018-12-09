@@ -7,8 +7,9 @@ public class Grabbable : Interactable
 {
     private Transform originalParent;
     private Vector3 originalLocalPosition;
-    private GameObject putDownPlace;
+    private GameObject putDownPlaceResource;
     private GameObject hand;
+    protected GameObject putDownPlace;
 
     protected new void Awake()
     {
@@ -26,13 +27,13 @@ public class Grabbable : Interactable
 
     private void Start()
     {
-        putDownPlace = Resources.Load("PutDownPlace") as GameObject;
+        putDownPlaceResource = Resources.Load("PutDownPlace") as GameObject;
     }
 
     protected override void InvokeAction()
     {
-        GameObject place = Instantiate(putDownPlace, originalParent, false);
-        place.transform.localPosition = originalLocalPosition;
+        putDownPlace = Instantiate(putDownPlaceResource, originalParent, false);
+        putDownPlace.transform.localPosition = originalLocalPosition;
 
         transform.parent = hand.transform;
         transform.localPosition = Vector3.zero;
