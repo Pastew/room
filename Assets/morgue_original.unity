@@ -4919,37 +4919,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4133127983393742, guid: 07ad45e2911873a44af9dea268f7ba5b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.009999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133127983393742, guid: 07ad45e2911873a44af9dea268f7ba5b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.009999996
-      objectReference: {fileID: 0}
     - target: {fileID: 1839803411274232, guid: 07ad45e2911873a44af9dea268f7ba5b, type: 2}
       propertyPath: m_Name
       value: ceiling_light 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 108374933306516540, guid: 07ad45e2911873a44af9dea268f7ba5b,
-        type: 2}
-      propertyPath: m_Lightmapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108374933306516540, guid: 07ad45e2911873a44af9dea268f7ba5b,
-        type: 2}
-      propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 108374933306516540, guid: 07ad45e2911873a44af9dea268f7ba5b,
-        type: 2}
-      propertyPath: m_Range
-      value: 36.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 108374933306516540, guid: 07ad45e2911873a44af9dea268f7ba5b,
-        type: 2}
-      propertyPath: m_Intensity
-      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ad45e2911873a44af9dea268f7ba5b, type: 2}
