@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/furniture/morgue_original.unity
+    path: Assets/Stachiewicza/Stachiewicza.unity
+    guid: 1dc8944956eb2f843a1101cfabe4bf38
+  - enabled: 1
+    path: Assets/morgue_original.unity
     guid: 080b6f5342ea21343963bdfa8ec09868
   m_configObjects: {}
