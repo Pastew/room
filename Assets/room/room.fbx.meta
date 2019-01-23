@@ -100,6 +100,7 @@ ModelImporter:
     100188: Plane
     100190: BlenderCamera
     100192: BlenderLight
+    100194: door.003
     400000: base.000
     400002: base.001
     400004: bath
@@ -197,6 +198,7 @@ ModelImporter:
     400188: Plane
     400190: BlenderCamera
     400192: BlenderLight
+    400194: door.003
     2000000: Camera
     2000002: BlenderCamera
     2100000: celling
@@ -313,6 +315,7 @@ ModelImporter:
     2300168: window_right.001
     2300170: Plane
     2300172: BlenderLight
+    2300174: door.003
     3300000: base.000
     3300002: base.001
     3300004: bath
@@ -400,6 +403,7 @@ ModelImporter:
     3300168: window_right.001
     3300170: Plane
     3300172: BlenderLight
+    3300174: door.003
     4300000: celling
     4300002: gas_oven
     4300004: radiator
@@ -483,6 +487,7 @@ ModelImporter:
     4300160: Plane
     4300162: door0.001
     4300164: BlenderLight
+    4300166: door.003
     10800000: chandelier
     10800002: sun
     2186277476908879412: ImportLogs
