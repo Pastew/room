@@ -101,6 +101,11 @@ ModelImporter:
     100190: BlenderCamera
     100192: BlenderLight
     100194: door.003
+    100196: door1
+    100198: door2.003
+    100200: walls_bathroom
+    100202: walls_room_small
+    100204: bed.000
     400000: base.000
     400002: base.001
     400004: bath
@@ -199,6 +204,11 @@ ModelImporter:
     400190: BlenderCamera
     400192: BlenderLight
     400194: door.003
+    400196: door1
+    400198: door2.003
+    400200: walls_bathroom
+    400202: walls_room_small
+    400204: bed.000
     2000000: Camera
     2000002: BlenderCamera
     2100000: celling
@@ -316,6 +326,11 @@ ModelImporter:
     2300170: Plane
     2300172: BlenderLight
     2300174: door.003
+    2300176: door1
+    2300178: door2.003
+    2300180: walls_bathroom
+    2300182: walls_room_small
+    2300184: bed.000
     3300000: base.000
     3300002: base.001
     3300004: bath
@@ -404,6 +419,11 @@ ModelImporter:
     3300170: Plane
     3300172: BlenderLight
     3300174: door.003
+    3300176: door1
+    3300178: door2.003
+    3300180: walls_bathroom
+    3300182: walls_room_small
+    3300184: bed.000
     4300000: celling
     4300002: gas_oven
     4300004: radiator
@@ -488,6 +508,11 @@ ModelImporter:
     4300162: door0.001
     4300164: BlenderLight
     4300166: door.003
+    4300168: walls_bathroom
+    4300170: door2.003
+    4300172: door1
+    4300174: walls_room_small
+    4300176: bed.000
     10800000: chandelier
     10800002: sun
     2186277476908879412: ImportLogs
@@ -650,12 +675,13 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -674,6 +700,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
