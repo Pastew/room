@@ -15,13 +15,13 @@ public class SmoothTransition : MonoBehaviour {
     }
 
     // Movement speed in units/sec.
-    public float speed = 1.0F;
+    public double speed = 1.0F;
 
     // Time when the movement started.
     private float startTime;
 
     // Total distance between the markers.
-    private float journeyLength;
+    private double journeyLength;
 
     public void SetupParameters(Vector3 startPos, Vector3 endPos, float speed)
     {
@@ -43,13 +43,13 @@ public class SmoothTransition : MonoBehaviour {
     void Update()
     {
         // Distance moved = time * speed.
-        float distCovered = (Time.time - startTime) * speed;
+        double distCovered = (Time.time - startTime) * speed;
 
         // Fraction of journey completed = current distance divided by total distance.
-        float fracJourney = distCovered / journeyLength;
+        double fracJourney = distCovered / journeyLength;
 
         // Set our position as a fraction of the distance between the markers.
-        transform.localPosition = Vector3.Lerp(startPos, endPos, fracJourney);
+        transform.localPosition = Vector3.Lerp(startPos, endPos, (float)fracJourney);
 
         // Remove component once it's job is done
         if (Vector3.Distance(transform.localPosition, endPos) < 0.01f)
