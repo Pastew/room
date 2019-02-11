@@ -866,8 +866,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000007, y: 0.89999944, z: 0.8056339}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0.14183857}
+  m_Size: {x: 0.89999926, y: 2.0000005, z: 0.8056339}
+  m_Center: {x: 0.00000047683716, y: 0, z: 0.14183857}
 --- !u!1 &863297286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100128, guid: e6d763365f2c4d4428129653fac92043,
@@ -1171,8 +1171,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5566842, y: 0.6466747, z: 0.93525016}
-  m_Center: {x: 0.00000023841858, y: -0.0000009685755, z: -0.03579479}
+  m_Size: {x: 0.40538093, y: 0.6466747, z: 0.93525016}
+  m_Center: {x: 0.07565187, y: -0.0000009685755, z: -0.03579479}
 --- !u!1 &1436276604 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100062, guid: e6d763365f2c4d4428129653fac92043,
