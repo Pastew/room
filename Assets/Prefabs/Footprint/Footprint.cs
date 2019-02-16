@@ -5,12 +5,14 @@ using UnityEngine;
 public class Footprint : Interactable
 {
     public float walkSpeed = 3;
+    public float footprintTimeNeededToSelect = 0.5f; // seconds
+    public float footprintDistanceRequiredToInteract = 10f; // meters
 
     protected new void Awake()
     {
         base.Awake();
-        timeNeededToSelect = 0.5f; // seconds
-        distanceRequiredToInteract = 10f; // meters
+        timeNeededToSelect = footprintTimeNeededToSelect;
+        distanceRequiredToInteract = footprintDistanceRequiredToInteract;
     }
 
     protected override void InvokeAction()
