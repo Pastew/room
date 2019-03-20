@@ -18,6 +18,12 @@ public class Footprint : Interactable
     protected override void InvokeAction()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        // If there is already SmoothTransition on player - remove it.
+        // It happenes when player is already moving from one footprint to another
+        if (player.GetComponent<SmoothTransition>())
+            Destroy(player.GetComponent<SmoothTransition>());
+
         SmoothTransition smoothTransition = player.AddComponent<SmoothTransition>();
 
         Vector3 startPos = player.transform.position;
