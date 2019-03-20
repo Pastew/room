@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 4396076113793918}
   - component: {fileID: 1584139418}
   - component: {fileID: 1584139417}
+  - component: {fileID: 1584139419}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -513,10 +514,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrCamera: {fileID: 0}
-  toggleAngle: 25
-  maxSpeed: 1.8
-  speedIncrease: 50
+  toggleAngle: 65
+  maxSpeed: 1
+  speedIncrease: 2.5
   moveForward: 0
+--- !u!114 &1584139419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836379092394224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7eda93eca876034087dc3dc503d5d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1857342978965206
 GameObject:
   m_ObjectHideFlags: 0

@@ -1093,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4396076113793918, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.324
+      value: -2.68
       objectReference: {fileID: 0}
     - target: {fileID: 4396076113793918, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1101,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4396076113793918, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.361
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 4396076113793918, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1134,10 +1134,6 @@ PrefabInstance:
     - target: {fileID: 4396076113793918, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584139417, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
-      propertyPath: toggleAngle
-      value: 65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c8288c74b343d840afd4feec757aba2, type: 3}
@@ -2447,24 +2443,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1582967857}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1584139415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1836379092394224, guid: 9c8288c74b343d840afd4feec757aba2,
-    type: 3}
-  m_PrefabInstance: {fileID: 560147503}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1584139419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584139415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7eda93eca876034087dc3dc503d5d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1607453237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100064, guid: e6d763365f2c4d4428129653fac92043,
