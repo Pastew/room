@@ -1,25 +1,33 @@
 fileFormatVersion: 2
-guid: a48021193f9c3c54f90531d924bdf485
+guid: 6985ec19d15838e4db74633a061dee80
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pusher
-    100002: //RootNode
-    400000: pusher
-    400002: //RootNode
+    100000: //RootNode
+    400000: //RootNode
     2100000: SyrigneFluid
     2100002: SyrigneBlack
     2100004: SyrigneBody
-    2300000: pusher
-    2300002: //RootNode
-    3300000: pusher
-    3300002: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: body
-    4300002: pusher
-    7400000: Default Take
-    9500000: //RootNode
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SyrigneBlack
+    second: {fileID: 2100000, guid: f80fb92d199dcd84e8a084e9eaab8df2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SyrigneBody
+    second: {fileID: 2100000, guid: 09323351f4aab8345a8d1e2a65adf1d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SyrigneFluid
+    second: {fileID: 2100000, guid: 8dad1b780c9e054429ee1d1c849d0daf, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -72,7 +80,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,7 +107,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
