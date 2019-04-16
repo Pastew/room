@@ -1,6 +1,6 @@
 # Room 
-[Work in progress]  
-[===20%          ]
+Work in progress
+<pre>[===20%          ]</pre>
 
 I decided to create Escape Room VR game for Android smartphones.  
 
