@@ -1,6 +1,5 @@
 # Room 
-Work in progress
-<pre>[===20%          ]</pre>
+Work in progress: 20%
 
 I decided to create Escape Room VR game for Android smartphones.  
 
