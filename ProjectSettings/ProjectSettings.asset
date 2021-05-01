@@ -138,9 +138,13 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 1193937489472875177, guid: bc87842975b39e54c9a8257bb65aef55, type: 2}
-  - {fileID: 11400000, guid: b3ac24369c63cb246976bcaf96adab11, type: 2}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 46f62ca2bdb10354c809c5ce2737ffb2, type: 2}
+  - {fileID: -5277172250738018165, guid: 85af9e85cc7437149bdcd515b5df9a9b, type: 2}
+  - {fileID: 0}
+  - {fileID: 6321248961382367550, guid: 53b927b38bca6364bafd7366c316cd57, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -166,7 +170,7 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 23
+  AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
   aotOptions: 
@@ -804,7 +808,7 @@ PlayerSettings:
   cloudProjectId: e22e4139-62c6-48a9-a1b6-d1b011f54414
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Room
   organizationId: pastew
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
